@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="main-navbar">
+                <div class="logo">
+                    <img class="logo-img" width="40px" height="45px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVTP2fH1zmjX1HQSf9oIipPK0qArjDWPbJQ&usqp=CAU"
+                        alt="blog" />
+                    <h3>Ecommerce</h3>
+                </div>
+                <div class="nav-option">
+                    <a href="http://localhost:5050/warehouse" class="btnLink">ADD YOUR PRODUCT</a>
+                    <a href="http://localhost:5050/login" class="btnLink">SIGN IN</a>
+                    <a href="http://localhost:5050/register" class="btnLink">REGISTER</a>
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+
+    <!-- <section class="d-flex"> -->
+
+
+
+    <% articles.forEach((articl)=> { %>
+        <% article1=articl[0] %>
+            <% article2=articl[1] %>
+                <% article3=articl[2] %>
+                    <% article4=articl[3] %>
+                        <div class="vlr">
+                            <section class="first">
+                                <div class="product-list">
+                                    <div class="product-image9">
+                                        <a href="http://localhost:5050/login">
+                                            <img class="pic-2" src="<%=article1.image%>" alt="111">
+                                        </a>
+                                        <a href="http://localhost:5050/login"
+                                            class="fa fa-search product-full-view"></a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="http://localhost:5050/login">
+                                                <%=article1.name%>
+                                            </a></h3>
+                                        <div class="price">₹ <%=article1.price%>
+                                        </div>
+                                        <a class="add-to-cart" href="">
+                                            <%=article1.title%>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-list">
+                                    <div class="product-image9">
+                                        <a href="http://localhost:5050/login">
+                                            <img class="pic-2" src="<%=article2.image%>" alt="111">
+                                        </a>
+                                        <a href="http://localhost:5050/login"
+                                            class="fa fa-search product-full-view"></a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="http://localhost:5050/login">
+                                                <%=article2.name%>
+                                            </a></h3>
+                                        <div class="price">₹ <%=article2.price%>
+                                        </div>
+                                        <a class="add-to-cart" href="">
+                                            <%=article2.title%>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-list">
+                                    <div class="product-image9">
+                                        <a href="http://localhost:5050/login">
+                                            <img class="pic-2" src="<%=article3.image%>" alt="111">
+                                        </a>
+                                        <a href="http://localhost:5050/login"
+                                            class="fa fa-search product-full-view"></a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="http://localhost:5050/login">
+                                                <%=article3.name%>
+                                            </a></h3>
+                                        <div class="price">₹ <%=article3.price%>
+                                        </div>
+                                        <a class="add-to-cart" href="">
+                                            <%=article3.title%>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-list">
+                                    <div class="product-image9">
+                                        <a href="http://localhost:5050/login">
+                                            <img class="pic-2" src="<%=article4.image%>" alt="111">
+                                        </a>
+                                        <a href="http://localhost:5050/login"
+                                            class="fa fa-search product-full-view"></a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="http://localhost:5050/login">
+                                                <%=article4.name%>
+                                            </a></h3>
+                                        <div class="price">₹ <%=article4.price%>
+                                        </div>
+                                        <a class="add-to-cart" href="http://localhost:5050/login">
+                                            <%=article4.title%>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <hr>
+                        <% }) %>
+
+</body>
+
+</html>
